@@ -6,9 +6,9 @@ class Person(models.Model):
     DOB = models.DateTimeField('Date Of Birth')
     phone = models.CharField('Phone number', max_length=16)
 
-
 class Event(models.Model):
     name = models.CharField('Event Name', max_length=120)
+    pub_date = models.DateTimeField('date published')
     event_date = models.DateTimeField('Event Date')
     venue = models.CharField(max_length=120)
     manager = models.CharField(max_length=60)
