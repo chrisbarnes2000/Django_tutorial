@@ -20,4 +20,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('polls/', include('polls.urls')),
     # path('events/', include('events.urls')),
+
+    # API
+    path('api/', include('api.urls')),
 ]
